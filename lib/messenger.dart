@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_overlay_window/flutter_overlay_window.dart';
 
-class MessangerChatHead extends StatefulWidget {
-  const MessangerChatHead({Key? key}) : super(key: key);
+class MessengerChatHead extends StatefulWidget {
+  const MessengerChatHead({Key? key}) : super(key: key);
 
   @override
-  State<MessangerChatHead> createState() => _MessangerChatHeadState();
+  State<MessengerChatHead> createState() => _MessengerChatHeadState();
 }
 
-class _MessangerChatHeadState extends State<MessangerChatHead> {
+class _MessengerChatHeadState extends State<MessengerChatHead> {
   Color color = Colors.red;
   BoxShape shape = BoxShape.circle;
 
@@ -28,8 +28,8 @@ class _MessangerChatHeadState extends State<MessangerChatHead> {
       child: GestureDetector(
         onTap: () async {
           print('here');
-          await FlutterOverlayWindow.closeOverlay();
-          FlutterOverlayWindow.disposeOverlayListener();
+          // await FlutterOverlayWindow.closeOverlay();
+          // FlutterOverlayWindow.disposeOverlayListener();
         },
         child: Container(
           height: MediaQuery.of(context).size.height,

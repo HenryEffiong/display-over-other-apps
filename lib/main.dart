@@ -17,7 +17,7 @@ void overlayMain() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MessangerChatHead(),
+      home: MessengerChatHead(),
     ),
   );
 }

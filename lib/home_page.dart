@@ -56,8 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () async {
                 if (await FlutterOverlayWindow.isActive()) return;
                 await FlutterOverlayWindow.showOverlay(
-                  height: 200,
-                  width: 200,
+                  height: 100,
+                  width: 100,
                   enableDrag: true,
                   overlayTitle: "Gab",
                   overlayContent: 'Overlay Enabled',
